@@ -1,6 +1,10 @@
 <div ng-controller="ShortenController" id='container'>
 <!-- Your code here -->
-
+  <form>
+    <input type="text" ng-model="newLink"/>
+    <button ng-click="addLink(newLink)">SUBMIT</button>
+  </form>
+  <p ng-hide="isUrl(newLink)">Not Valid URL</p>
 </div>
 
 

@@ -1,3 +1,10 @@
 <div ng-controller="LinksController" id='container'>
   <!-- Your html here -->
+  <ul>
+    <ul ng-repeat="link in data.links">
+      <li>{{link.title}}</li>
+      <li>{{link.url}}</li>
+      <li>{{link.base_url}}</li>
+      <li>{{link.visits}}</li>
+  </ul>
 </div>
